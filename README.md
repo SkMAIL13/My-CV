@@ -1,5 +1,5 @@
 # CV
 ---
-## ABOUT
+## ABOUT:
 
 ### My Cv with own page layout
