@@ -1,5 +1,5 @@
-# CV
+# CV/ Резюме
 ---
-## ABOUT:
+## ABOUT/ Описание:
 
-### My Cv with own page layout
+### My Cv with own page layout/ Моё резюме, со своим макетом
