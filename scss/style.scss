@@ -29,8 +29,8 @@ $md4:479.98;
 *,*:before,*:after{-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
 :focus,:active{outline: none;}
 aside,nav,footer,header,section{display: block;}
-html,body{height: 100%;margin: 0;padding: 0;min-width: $min-width;position: relative;width: 100%;color:#000;}
-body{font-size: 100%;line-height: 1;font-size: 14px; font-family: $font-family;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;
+html,body{height: 100%;margin: 0;padding: 0;$min-width: $min-width;position: relative;width: 100%;color:#000;}
+body{font-size: 100%;line-height: 1;font-size: 14px;font-weight:500;font-family:Ubuntu; color:#000;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;
    &.lock{overflow: hidden;
    @media (max-width:$md3+px){
       width: 100%;
@@ -43,7 +43,7 @@ input,button,textarea{font-family: $fontfamily;}
 input::-ms-clear{display: none;}
 button{cursor: pointer;}
 button::-moz-focus-inner {padding:0;border:0;}
-a, a:visited{text-decoration: none;}
+a, a:visited{text-decoration: none; color:#000}
 a:hover{text-decoration: none;}
 ul li{list-style: none;}
 img{vertical-align: top;}
@@ -52,14 +52,13 @@ h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
 //Стандарт
 //==========================================================================================
 .wrapper{width:100%;min-height: 100%;overflow: hidden;
-   &.loaded{}
 }
 
 //Экран
 //==========================================================================================
 ._container{
-   max-width: $maxWidthContainer+px;
-   margin: 0 auto;
+   max-width: $maxWidthContainer + px;
+   margin: 0px auto;
    @media (max-width: $md1+px) {
       max-width: 970px;
    }
@@ -74,3 +73,53 @@ h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
 
 //Основа
 //==========================================================================================
+.header {
+   position: absolute;
+   width: 100%;
+   left: 0;
+   top: 0;
+   z-index: 50;
+   
+   &__content {
+      width: 100%;
+      max-width: 1182px;
+      padding: 0px 6px;
+      display: flex;
+      min-height: 104px;
+      align-items: center;
+   }
+
+   &__menu {
+      display: flex;
+      margin: 0px 0px 133px;
+      margin: 0px 0px 0px 500px;
+   }
+}
+
+
+.menu {
+   &__list{
+      display: flex;
+      //li {
+
+      //}
+   }
+   &__item{
+      margin: 0px 0px 0px 21px;
+   }
+   &__link{
+      font-size: 20px;
+      
+      font-weight: 500;
+      color: #000;
+   }
+}
+
+.icon__language {
+   max-width: 25px;
+}
+
+._container {
+   max-width: 1182px;
+   margin: 0px auto;}
+
