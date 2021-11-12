@@ -288,7 +288,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 142%;
 }
 
-.header-blockExperience__title {
+.header-blockTitle__title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -303,7 +303,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-left: 40px;
 }
 
-.header-blockExperience__description {
+.header-blockInfo__description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
