@@ -1,24 +1,32 @@
-@import url(https://fonts.googleapis.com/css?family=Ubuntu:regular,500,700&display=swap&subset=cyrillic-ext);
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans:regular,700&display=swap&subset=cyrillic-ext);
 * {
   padding: 0px;
   margin: 0px;
   border: 0px;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-:focus, :active {
+:focus,
+:active {
   outline: none;
 }
 
-aside, nav, footer, header, section {
+aside,
+nav,
+footer,
+header,
+section {
   display: block;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -32,7 +40,7 @@ body {
   line-height: 1;
   font-size: 14px;
   font-weight: 500;
-  font-family: Ubuntu;
+  font-family: Noto Sans;
   color: #000;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -50,8 +58,10 @@ body.lock {
   }
 }
 
-input, button, textarea {
-  font-family: "Ubuntu";
+input,
+button,
+textarea {
+  font-family: "Noto Sans";
 }
 
 input::-ms-clear {
@@ -67,7 +77,8 @@ button::-moz-focus-inner {
   border: 0;
 }
 
-a, a:visited {
+a,
+a:visited {
   text-decoration: none;
   color: #000;
 }
@@ -84,7 +95,12 @@ img {
   vertical-align: top;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: inherit;
   font-size: inherit;
 }
@@ -116,6 +132,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 991.98px) {
   ._container {
     max-width: 750px;
+    margin-right: 0;
   }
 }
 
@@ -151,8 +168,9 @@ h1, h2, h3, h4, h5, h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0px 0px 133px;
-  margin: 0px 0px 0px 500px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header-block__description {
@@ -160,8 +178,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer__content {
-  padding: 20px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding: 10px;
   background-color: rgba(104, 97, 97, 0.205);
+  height: 1em;
 }
 
 .menu__list {
