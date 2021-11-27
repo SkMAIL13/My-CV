@@ -176,19 +176,27 @@ h6 {
 .footer {
    &__content {
       flex: 1 1 auto;
-      padding: 10px;
-      background-color: rgba(104, 97, 97, 0.205);
+      padding: 30px 0;
+      background: rgba(104, 97, 97, 0.205);
       height: 1em;
    }
+   &__container {
+      color:#2f80ed;
+      text-align: center;
+   }
+
+   &__copyright {
+      letter-spacing: 0.2px;
+   }
 }
+
+
 
 //MENU
 .menu {
    &__list {
       display: flex;
-      //li {
 
-      //}
    }
    &__item {
       margin: 0px 0px 0px 20px;
@@ -332,6 +340,12 @@ h6 {
 .project {
    &__body {
       text-align: center;
+   }
+   &__column{
+      display: flex;
+      flex: 0 1 33.3%;
+      justify-content: space-between;
+      align-items: center;
    }
 }
 

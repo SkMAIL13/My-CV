@@ -181,9 +181,18 @@ h6 {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  padding: 10px;
-  background-color: rgba(104, 97, 97, 0.205);
+  padding: 30px 0;
+  background: rgba(104, 97, 97, 0.205);
   height: 1em;
+}
+
+.footer__container {
+  color: #2f80ed;
+  text-align: center;
+}
+
+.footer__copyright {
+  letter-spacing: 0.2px;
 }
 
 .menu__list {
@@ -355,6 +364,21 @@ h6 {
 
 .project__body {
   text-align: center;
+}
+
+.project__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33.3%;
+          flex: 0 1 33.3%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .experience____container {
