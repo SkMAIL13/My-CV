@@ -324,6 +324,7 @@ h6 {
 }
 
 .header-blockTitle__title {
+  padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
