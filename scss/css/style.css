@@ -143,10 +143,6 @@ h6 {
   }
 }
 
-.test {
-  font-size: 11em;
-}
-
 .header {
   position: absolute;
   width: 100%;
@@ -196,7 +192,7 @@ h6 {
 }
 
 .header-block__description {
-  margin-bottom: 10px;
+  padding: 0px 20px;
   display: -ms-flexbox;
   display: flex;
   font-size: 17px;
@@ -214,7 +210,12 @@ h6 {
 }
 
 .header-block__list {
-  list-style-type: disc;
+  list-style-type: square;
+}
+
+.header-block__listsec {
+  list-style-type: square;
+  padding-top: 15px;
 }
 
 .header-blockTitle__title {
@@ -248,7 +249,7 @@ h6 {
   flex-wrap: wrap;
   font-size: 17px;
   line-height: 142%;
-  padding-left: 30px;
+  padding: 0px 30px 40px 30px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -258,7 +259,7 @@ h6 {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  padding: 20px 0;
+  padding: 10px 0;
   background: rgba(104, 97, 97, 0.303);
   line-height: 171%;
 }
@@ -334,7 +335,7 @@ h6 {
 }
 
 .card__background {
-  margin: 60px 0px 10px 0px;
+  margin: 60px 20px 10px 20px;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;

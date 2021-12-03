@@ -66,7 +66,7 @@ body {
    -webkit-text-size-adjust: 100%;
    &.lock {
       overflow: hidden;
-      @media (max-width: $md3 + px) {
+      @media(max-width:$md3+px){
          width: 100%;
          position: fixed;
          overflow: hidden;
@@ -127,14 +127,14 @@ h6 {
 ._container {
    max-width: $maxWidthContainer + px;
    margin: 0px auto;
-   @media (max-width: $md1 + px) {
+   @media (max-width:$md1+px) {
       max-width: 970px;
    }
-   @media (max-width: $md2 + px) {
+   @media (max-width:$md2+px) {
       max-width: 750px;
       margin-right: 0;
    }
-   @media (max-width: $md3 + px) {
+   @media (max-width:$md3+px) {
       max-width: none;
       padding: 0 10px;
    }
@@ -143,10 +143,6 @@ h6 {
 //Основа
 //==========================================================================================
 
-
-.test {
-   font-size: 11em;
-}
 
 //HEADER
 .header {
@@ -185,7 +181,7 @@ h6 {
    text-align: center;
    letter-spacing: 0.2px;
    &__description {
-      margin-bottom: 10px;
+      padding: 0px 20px;
       display: flex;
       font-size: 17px;
       text-align: center;
@@ -200,7 +196,11 @@ h6 {
       text-transform: uppercase;
    }
    &__list{
-      list-style-type: disc;
+      list-style-type: square;
+   }
+   &__listsec{
+      list-style-type: square;
+      padding-top: 15px;
    }
 }
 
@@ -229,7 +229,7 @@ h6 {
           flex-wrap: wrap;
       font-size: 17px;
       line-height: 142%;
-      padding-left: 30px;
+      padding: 0px 30px 40px 30px;
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
@@ -241,7 +241,7 @@ h6 {
 .footer {
    &__content {
       flex: 1 1 auto;
-      padding: 20px 0;
+      padding: 10px 0;
       background: rgba(104, 97, 97, 0.303);
       line-height: 171%;
    }
@@ -249,7 +249,6 @@ h6 {
       color:#2f80ed;
       text-align: center;
    }
-
    &__copyright {
       letter-spacing: 0.2px;
    }
@@ -308,11 +307,10 @@ h6 {
 .card {
    &__container {
       display: flex;
-      //background-color: #262C31;
    }
    &__background {
       //padding: 0 0 10px;
-      margin: 60px 0px 10px 0px;
+      margin: 60px 20px 10px 20px;
       flex: 1 1 auto;
       width: 100%;
       background-color: rgba(104, 97, 97, 0.205);
@@ -375,11 +373,5 @@ h6 {
       flex: 0 1 33.3%;
       justify-content: space-between;
       align-items: center;
-   }
-}
-
-.experience {
-   &__container {
-      //display: flex;
    }
 }
