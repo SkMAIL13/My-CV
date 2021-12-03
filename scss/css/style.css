@@ -32,10 +32,10 @@ body {
   padding: 0;
   position: relative;
   width: 100%;
-  color: #000;
 }
 
 body {
+  background-color: rgba(0, 0, 0, 0.029);
   font-size: 100%;
   line-height: 1;
   font-size: 14px;
@@ -270,6 +270,8 @@ h6 {
   height: 180px;
   margin: 0 auto;
   overflow: hidden;
+  -webkit-box-shadow: -5px 13px 0px 0px #fff;
+          box-shadow: -5px 13px 0px 0px #fff;
   text-align: center;
   padding: 10px;
 }
@@ -288,6 +290,13 @@ h6 {
   font-weight: 700;
   color: #2f80ed;
   line-height: 136.36364%;
+}
+
+@media (max-width: 768px) {
+  .card__info {
+    font-size: 38px;
+    margin-right: 0;
+  }
 }
 
 .card__social {
@@ -350,12 +359,13 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   font-size: 17px;
   line-height: 142%;
-  padding-left: 400px;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header-block__list {

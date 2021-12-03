@@ -53,9 +53,9 @@ body {
    $min-width: $min-width;
    position: relative;
    width: 100%;
-   color: #000;
 }
 body {
+   background-color: rgba(0, 0, 0, 0.029);
    font-size: 100%;
    line-height: 1;
    font-size: 14px;
@@ -66,7 +66,7 @@ body {
    -webkit-text-size-adjust: 100%;
    &.lock {
       overflow: hidden;
-      @media (max-width: $md3+px) {
+      @media (max-width: $md3 + px) {
          width: 100%;
          position: fixed;
          overflow: hidden;
@@ -128,7 +128,7 @@ h6 {
    max-width: $maxWidthContainer + px;
    margin: 0px auto;
    @media (max-width: $md1 + px) {
-      max-width: 970px;
+      max-width: 97 0px;
    }
    @media (max-width: $md2 + px) {
       max-width: 750px;
@@ -174,6 +174,7 @@ h6 {
 
 //FOOTER
 .footer {
+
    &__content {
       flex: 1 1 auto;
       padding: 20px 0;
@@ -260,6 +261,7 @@ h6 {
       height: 180px;
       margin: 0 auto;
       overflow: hidden;
+      box-shadow: -5px 13px 0px 0px #fff;
       text-align: center;
       padding: 10px;
       img {
@@ -276,10 +278,19 @@ h6 {
       font-weight: 700;
       color: #2f80ed;
       line-height: 60 / 44 * 100%;
+      //@media (max-width: 768px){
+         //font-size: 38px;
+         //margin: 10px 10px 10px 10px;
+      //}
+      @media (max-width: 378px) {
+         font-size: 16px;
+      }
    }
    &__social {
       padding: 10px 10px 10px 10px;
       text-align: center;
+      @media (max-width:768px) {
+         padding: 8px 10px 8px 10px;
    }
 }
 
@@ -323,17 +334,18 @@ h6 {
 
 .header-blockInfo__description {
    display: flex;
+   flex-wrap: wrap;
    font-size: 17px;
    line-height: 142%;
-   padding-left: 400px;
-   align-items: flex-end;
+   //padding-left: 400px;
+   align-items: center;
 }
 
 .header-block__list {
    list-style-type: disc;
    padding-bottom: 10px;
 }
-
+ 
 //PROJECT
 
 .project {
